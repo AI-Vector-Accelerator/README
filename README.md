@@ -18,39 +18,39 @@ The owners make no guarantees that it will be supported in the future or that an
 
 Below is a brief description of each repository.
 
-### riscv-toolchain-setup-tests
+### [riscv-toolchain-setup-tests](https://github.com/AI-Vector-Accelerator/riscv-toolchain-setup-tests)
 
 Contains scripts to automatically build and configure the GNU RISC-V toolchain for both the standard and accelerated versions of the CV32E40P.
 
 Also contains simple C/C++ programs to verify the correct configuration of the toolchain, Spike, and the CV32E40P Verilator model.
 
-### NN_software
+### [NN_software](https://github.com/AI-Vector-Accelerator/NN_software)
 
 Contains implementations of the NN operations most prevalent in TensorFlow networks in C/C++ and RVV assembly.
 Used to generate the object files needed to give TFL Micro support for the RVV instructions.
 
-### cv32e40p
+### [cv32e40p](https://github.com/AI-Vector-Accelerator/cv32e40p)
 
-A fork of the OpenHW Group CV32E40P with modifications allowing more flexible integration with an accelerator/co-processor through the APU interface.
+A fork of the [OpenHW Group CV32E40P](https://github.com/openhwgroup/cv32e40p) with modifications allowing more flexible integration with an accelerator/co-processor through the APU interface.
 
-### ava-core
+### [ava-core](https://github.com/AI-Vector-Accelerator/ava-core)
 
 A lightweight core designed to integrate to the CV32E40P through the APU interface.
 Implements a subsection of the RVV ISA with 32 32-bit vector registers and 4 processing elements.
 
-### core-v-verif-ava
+### [core-v-verif-ava](https://github.com/AI-Vector-Accelerator/core-v-verif-ava)
 
-A fork of the OpenHW Group core-v-verif repository supporting the verification of the ava-core.
+A fork of the [OpenHW Group core-v-verif](https://github.com/openhwgroup/core-v-verif) repository supporting the verification of the ava-core.
 Can be used to construct a verilator model of the integrated CV32E40P and AVA Core which can be used to run arbitrary software.
 
-### tensorflow
+### [tensorflow](https://github.com/AI-Vector-Accelerator/tensorflow)
 
-A fork of Google's TensorFlow repository.
+A fork of Google's [TensorFlow](https://github.com/tensorflow/tensorflow) repository.
 Contains a port of the reference implementation of TFL Micro for the CV32E40P, and an optimised port supporting the RVV instructions implemented in the AVA Core.
 
-### tinymlperf
+### [tinymlperf](https://github.com/AI-Vector-Accelerator/tinymlperf)
 
-A fork of the TinyMLPerf suite of Benchmarks for embedded systems under development by the MLCommons group.
+A fork of the [TinyMLPerf](https://github.com/mlcommons/tiny) suite of Benchmarks for embedded systems under development by the MLCommons group.
 It is configured to build TFL Micro from the repository above, allowing the performance of both the standard and accelerated CV32E40P to be measured.
 
 ## Getting Started
